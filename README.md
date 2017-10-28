@@ -147,3 +147,7 @@ Modify border style, color, width and easing
 | .ui-box .right-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
 | .ui-box .bottom-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
 | .ui-box .left-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
+
+## Donate Link
+
+[Donate Now](https://www.paypal.me/codefx).
