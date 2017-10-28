@@ -1,0 +1,128 @@
+body{
+    background: #ff6347;
+    font-family: Roboto, sans-serif;
+    color: #FFF;
+    font-size: 14px;
+    margin: 0;
+  padding: 0;
+}
+
+.gridBox{
+  width: 70%;
+  margin: auto;
+}
+
+a.ui-box{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.box header{
+  padding: 10px;
+  text-align: center;
+  background-color: #FFA595;
+  margin-bottom: 10px;
+  color: #333;
+  border-radius: 3px;
+ }
+
+.box article{
+  padding: 30px 0;
+  text-align: center;
+}
+
+.box article a{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.box article a:hover{
+  background-color: #FF816A;
+}
+
+.gridBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 100px auto;
+}
+
+.divider{
+    grid-column-start: 1;
+      grid-column-end: -1;
+      padding-bottom: 50px;
+}
+
+.dividerLine{
+  border-bottom: 1px solid #FF816A;
+}
+
+
+.footer{
+    border-top: 1px dashed #FFF;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-link a{
+  text-decoration: none;
+  color: #FFF;
+  padding: 10px;
+}
+
+.download-btn{
+    text-decoration: none;
+    padding: 20px 70px !important;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 20px !important;
+    text-transform: uppercase;
+    color: #999 !important;
+    border: none;
+    transition: all 200ms;
+}
+
+.download-btn:hover{
+    background-color: rgba(255, 255, 255, .9);
+    color: #333 !important;
+}
+
+.main{
+
+}
+
+.main-header{
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #FFBA30;
+  padding: 100px 0;
+}
+
+.mit{
+  text-decoration: none;
+  color: #FFF;
+  border-bottom: 1px dashed #FFF;
+}
+
+.main-header h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 900px){
+    .gridBox{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .gridBox{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}

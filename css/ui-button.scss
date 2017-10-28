@@ -1,0 +1,33 @@
+@mixin browser-transition-property( $v : all ){
+  -webkit-transition-property: $v;
+  -moz-transition-property: $v;
+  -o-transition-property: $v;
+  transition-property: $v;
+}
+
+@mixin browser-transition-duration( $v : 0s ){
+  -webkit-transition-duration: $v;
+  -moz-transition-duration: $v;
+  -o-transition-duration: $v;
+  transition-duration: $v;
+}
+
+@mixin browser-transition-timing-function( $v : linear ){
+  -webkit-transition-timing-function: $v;
+  -moz-transition-timing-function: $v;
+  -o-transition-timing-function: $v;
+  transition-timing-function: $v;
+}
+
+@mixin browser-transition-delay( $v : 0s ){
+  -webkit-transition-delay: $v;
+  -moz-transition-delay: $v;
+  -o-transition-delay: $v;
+  transition-delay: $v;
+}
+
+$borderWidth : 2px;
+$borderStyle: solid;
+$borderColor: #333;
+$borderDuration: 200ms;
+$borderEasing : cubic-bezier(0,.98,.51,.93);

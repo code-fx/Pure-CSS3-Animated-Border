@@ -1,0 +1,4689 @@
+.ui-box {
+  text-decoration: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  position: relative;
+  vertical-align: baseline;
+  padding: 10px;
+}
+
+.top-leftToRight:before, .top-leftToRight:after, .top-leftToRight > .ui-border-element:before, .top-leftToRight > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftToRight:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftToRight:hover:before {
+  right: 0%;
+}
+
+.top-leftToRight:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightToLeft:before, .top-rightToLeft:after, .top-rightToLeft > .ui-border-element:before, .top-rightToLeft > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightToLeft:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightToLeft:hover:before {
+  left: 0%;
+}
+
+.top-rightToLeft:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-inOutSpread:before, .top-inOutSpread:after, .top-inOutSpread > .ui-border-element:before, .top-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-inOutSpread:before {
+  border-top: 2px solid #333;
+  left: 51%;
+  right: 51%;
+  top: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-inOutSpread:hover:before {
+  left: 0%;
+  right: 0%;
+}
+
+.top-inOutSpread:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-slideOpposite:before, .top-slideOpposite:after, .top-slideOpposite > .ui-border-element:before, .top-slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-slideOpposite {
+  overflow: hidden;
+}
+
+.top-slideOpposite:before {
+  border-top: 5px solid #333;
+  left: 0;
+  right: 0;
+  top: -30%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-slideOpposite:hover:before {
+  top: 0px;
+}
+
+.top-slideOpposite:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftToRight:before, .bottom-leftToRight:after, .bottom-leftToRight > .ui-border-element:before, .bottom-leftToRight > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftToRight:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftToRight:hover:after {
+  right: 0%;
+}
+
+.bottom-leftToRight:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightToLeft:before, .bottom-rightToLeft:after, .bottom-rightToLeft > .ui-border-element:before, .bottom-rightToLeft > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightToLeft:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightToLeft:hover:after {
+  left: 0%;
+}
+
+.bottom-rightToLeft:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-inOutSpread:before, .bottom-inOutSpread:after, .bottom-inOutSpread > .ui-border-element:before, .bottom-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-inOutSpread:after {
+  border-bottom: 2px solid #333;
+  left: 51%;
+  right: 51%;
+  bottom: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-inOutSpread:hover:after {
+  left: 0%;
+  right: 0%;
+}
+
+.bottom-inOutSpread:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-slideOpposite:before, .bottom-slideOpposite:after, .bottom-slideOpposite > .ui-border-element:before, .bottom-slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-slideOpposite {
+  overflow: hidden;
+}
+
+.bottom-slideOpposite:after {
+  border-bottom: 5px solid #333;
+  left: 0;
+  right: 0;
+  bottom: -30%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-slideOpposite:hover:after {
+  bottom: 0px;
+}
+
+.bottom-slideOpposite:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-topToBottom:before, .left-topToBottom:after, .left-topToBottom > .ui-border-element:before, .left-topToBottom > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-topToBottom:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-topToBottom:hover:before {
+  bottom: 0%;
+}
+
+.left-topToBottom:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-bottomToTop:before, .left-bottomToTop:after, .left-bottomToTop > .ui-border-element:before, .left-bottomToTop > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-bottomToTop:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-bottomToTop:hover:before {
+  top: 0%;
+}
+
+.left-bottomToTop:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-inOutSpread:before, .left-inOutSpread:after, .left-inOutSpread > .ui-border-element:before, .left-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-inOutSpread:before {
+  border-left: 2px solid #333;
+  top: 50%;
+  bottom: 50%;
+  left: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-inOutSpread:hover:before {
+  top: 0%;
+  bottom: 0%;
+}
+
+.left-inOutSpread:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-slideOpposite:before, .left-slideOpposite:after, .left-slideOpposite > .ui-border-element:before, .left-slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-slideOpposite {
+  overflow: hidden;
+}
+
+.left-slideOpposite:before {
+  border-left: 5px solid #333;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-slideOpposite:hover:before {
+  left: 0px;
+}
+
+.left-slideOpposite:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-topToBottom:before, .right-topToBottom:after, .right-topToBottom > .ui-border-element:before, .right-topToBottom > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-topToBottom:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-topToBottom:hover:after {
+  bottom: 0%;
+}
+
+.right-topToBottom:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-bottomToTop:before, .right-bottomToTop:after, .right-bottomToTop > .ui-border-element:before, .right-bottomToTop > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-bottomToTop:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-bottomToTop:hover:after {
+  top: 0%;
+}
+
+.right-bottomToTop:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-inOutSpread:before, .right-inOutSpread:after, .right-inOutSpread > .ui-border-element:before, .right-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-inOutSpread:after {
+  border-right: 2px solid #333;
+  top: 50%;
+  bottom: 50%;
+  right: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-inOutSpread:hover:after {
+  top: 0%;
+  bottom: 0%;
+}
+
+.right-inOutSpread:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-slideOpposite:before, .right-slideOpposite:after, .right-slideOpposite > .ui-border-element:before, .right-slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-slideOpposite {
+  overflow: hidden;
+}
+
+.right-slideOpposite:after {
+  border-right: 5px solid #333;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-slideOpposite:hover:after {
+  right: 0px;
+}
+
+.right-slideOpposite:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:before, .forwardBorderTrain:after, .forwardBorderTrain > .ui-border-element:before, .forwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.forwardBorderTrain:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:hover:before {
+  right: 0%;
+}
+
+.forwardBorderTrain:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:before, .forwardBorderTrain:after, .forwardBorderTrain > .ui-border-element:before, .forwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.forwardBorderTrain .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.forwardBorderTrain:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:before, .forwardBorderTrain:after, .forwardBorderTrain > .ui-border-element:before, .forwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.forwardBorderTrain:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:hover:after {
+  left: 0%;
+}
+
+.forwardBorderTrain:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:before, .forwardBorderTrain:after, .forwardBorderTrain > .ui-border-element:before, .forwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.forwardBorderTrain .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.forwardBorderTrain:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.forwardBorderTrain:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:before, .backwardBorderTrain:after, .backwardBorderTrain > .ui-border-element:before, .backwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.backwardBorderTrain:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:hover:before {
+  left: 0%;
+}
+
+.backwardBorderTrain:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:before, .backwardBorderTrain:after, .backwardBorderTrain > .ui-border-element:before, .backwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.backwardBorderTrain .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.backwardBorderTrain:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:before, .backwardBorderTrain:after, .backwardBorderTrain > .ui-border-element:before, .backwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.backwardBorderTrain:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:hover:after {
+  right: 0%;
+}
+
+.backwardBorderTrain:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:before, .backwardBorderTrain:after, .backwardBorderTrain > .ui-border-element:before, .backwardBorderTrain > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.backwardBorderTrain .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.backwardBorderTrain:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.backwardBorderTrain:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart:before, .top-leftStart:after, .top-leftStart > .ui-border-element:before, .top-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-leftStart:hover:before {
+  right: 0%;
+}
+
+.top-leftStart:not(:hover):before {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-leftStart:before, .top-leftStart:after, .top-leftStart > .ui-border-element:before, .top-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-leftStart:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.top-leftStart:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-leftStart:before, .top-leftStart:after, .top-leftStart > .ui-border-element:before, .top-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-leftStart:hover:after {
+  left: 0%;
+}
+
+.top-leftStart:not(:hover):after {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-leftStart:before, .top-leftStart:after, .top-leftStart > .ui-border-element:before, .top-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-leftStart:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.top-leftStart:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-rightStart:before, .top-rightStart:after, .top-rightStart > .ui-border-element:before, .top-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-rightStart:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.top-rightStart:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-rightStart:before, .top-rightStart:after, .top-rightStart > .ui-border-element:before, .top-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-rightStart:hover:after {
+  left: 0%;
+}
+
+.top-rightStart:not(:hover):after {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-rightStart:before, .top-rightStart:after, .top-rightStart > .ui-border-element:before, .top-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-rightStart:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.top-rightStart:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-rightStart:before, .top-rightStart:after, .top-rightStart > .ui-border-element:before, .top-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-rightStart:hover:before {
+  right: 0%;
+}
+
+.top-rightStart:not(:hover):before {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-rightStart:before, .bottom-rightStart:after, .bottom-rightStart > .ui-border-element:before, .bottom-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-rightStart:hover:after {
+  left: 0%;
+}
+
+.bottom-rightStart:not(:hover):after {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-rightStart:before, .bottom-rightStart:after, .bottom-rightStart > .ui-border-element:before, .bottom-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-rightStart:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.bottom-rightStart:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-rightStart:before, .bottom-rightStart:after, .bottom-rightStart > .ui-border-element:before, .bottom-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-rightStart:hover:before {
+  right: 0%;
+}
+
+.bottom-rightStart:not(:hover):before {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-rightStart:before, .bottom-rightStart:after, .bottom-rightStart > .ui-border-element:before, .bottom-rightStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-rightStart:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.bottom-rightStart:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-leftStart:before, .bottom-leftStart:after, .bottom-leftStart > .ui-border-element:before, .bottom-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-leftStart:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.bottom-leftStart:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-leftStart:before, .bottom-leftStart:after, .bottom-leftStart > .ui-border-element:before, .bottom-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-leftStart:hover:before {
+  right: 0%;
+}
+
+.bottom-leftStart:not(:hover):before {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-leftStart:before, .bottom-leftStart:after, .bottom-leftStart > .ui-border-element:before, .bottom-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-leftStart:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.bottom-leftStart:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-leftStart:before, .bottom-leftStart:after, .bottom-leftStart > .ui-border-element:before, .bottom-leftStart > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-leftStart:hover:after {
+  left: 0%;
+}
+
+.bottom-leftStart:not(:hover):after {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-leftStart-backward:before, .top-leftStart-backward:after, .top-leftStart-backward > .ui-border-element:before, .top-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-leftStart-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.top-leftStart-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-leftStart-backward:before, .top-leftStart-backward:after, .top-leftStart-backward > .ui-border-element:before, .top-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-leftStart-backward:hover:after {
+  right: 0%;
+}
+
+.top-leftStart-backward:not(:hover):after {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-leftStart-backward:before, .top-leftStart-backward:after, .top-leftStart-backward > .ui-border-element:before, .top-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-leftStart-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.top-leftStart-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-leftStart-backward:before, .top-leftStart-backward:after, .top-leftStart-backward > .ui-border-element:before, .top-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-leftStart-backward:hover:before {
+  left: 0%;
+}
+
+.top-leftStart-backward:not(:hover):before {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-rightStart-backward:before, .top-rightStart-backward:after, .top-rightStart-backward > .ui-border-element:before, .top-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-rightStart-backward:hover:before {
+  left: 0%;
+}
+
+.top-rightStart-backward:not(:hover):before {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-rightStart-backward:before, .top-rightStart-backward:after, .top-rightStart-backward > .ui-border-element:before, .top-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-rightStart-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.top-rightStart-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-rightStart-backward:before, .top-rightStart-backward:after, .top-rightStart-backward > .ui-border-element:before, .top-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-rightStart-backward:hover:after {
+  right: 0%;
+}
+
+.top-rightStart-backward:not(:hover):after {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-rightStart-backward:before, .top-rightStart-backward:after, .top-rightStart-backward > .ui-border-element:before, .top-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-rightStart-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.top-rightStart-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-rightStart-backward:before, .bottom-rightStart-backward:after, .bottom-rightStart-backward > .ui-border-element:before, .bottom-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-rightStart-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.bottom-rightStart-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-rightStart-backward:before, .bottom-rightStart-backward:after, .bottom-rightStart-backward > .ui-border-element:before, .bottom-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-rightStart-backward:hover:before {
+  left: 0%;
+}
+
+.bottom-rightStart-backward:not(:hover):before {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-rightStart-backward:before, .bottom-rightStart-backward:after, .bottom-rightStart-backward > .ui-border-element:before, .bottom-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-rightStart-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.bottom-rightStart-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-rightStart-backward:before, .bottom-rightStart-backward:after, .bottom-rightStart-backward > .ui-border-element:before, .bottom-rightStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-rightStart-backward:hover:after {
+  right: 0%;
+}
+
+.bottom-rightStart-backward:not(:hover):after {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-leftStart-backward:before, .bottom-leftStart-backward:after, .bottom-leftStart-backward > .ui-border-element:before, .bottom-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-leftStart-backward:hover:after {
+  right: 0%;
+}
+
+.bottom-leftStart-backward:not(:hover):after {
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-leftStart-backward:before, .bottom-leftStart-backward:after, .bottom-leftStart-backward > .ui-border-element:before, .bottom-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-leftStart-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.bottom-leftStart-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-leftStart-backward:before, .bottom-leftStart-backward:after, .bottom-leftStart-backward > .ui-border-element:before, .bottom-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-leftStart-backward:hover:before {
+  left: 0%;
+}
+
+.bottom-leftStart-backward:not(:hover):before {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-leftStart-backward:before, .bottom-leftStart-backward:after, .bottom-leftStart-backward > .ui-border-element:before, .bottom-leftStart-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-leftStart-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.bottom-leftStart-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-leftStart-burst:before, .top-leftStart-burst:after, .top-leftStart-burst > .ui-border-element:before, .top-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-leftStart-burst:hover:before {
+  right: 0%;
+}
+
+.top-leftStart-burst:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst:before, .top-leftStart-burst:after, .top-leftStart-burst > .ui-border-element:before, .top-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-leftStart-burst:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.top-leftStart-burst:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst:before, .top-leftStart-burst:after, .top-leftStart-burst > .ui-border-element:before, .top-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-leftStart-burst:hover:after {
+  left: 0%;
+}
+
+.top-leftStart-burst:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst:before, .top-leftStart-burst:after, .top-leftStart-burst > .ui-border-element:before, .top-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-leftStart-burst:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.top-leftStart-burst:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst:before, .top-rightStart-burst:after, .top-rightStart-burst > .ui-border-element:before, .top-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-rightStart-burst:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.top-rightStart-burst:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst:before, .top-rightStart-burst:after, .top-rightStart-burst > .ui-border-element:before, .top-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-rightStart-burst:hover:after {
+  left: 0%;
+}
+
+.top-rightStart-burst:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst:before, .top-rightStart-burst:after, .top-rightStart-burst > .ui-border-element:before, .top-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-rightStart-burst:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.top-rightStart-burst:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst:before, .top-rightStart-burst:after, .top-rightStart-burst > .ui-border-element:before, .top-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-rightStart-burst:hover:before {
+  right: 0%;
+}
+
+.top-rightStart-burst:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst:before, .bottom-rightStart-burst:after, .bottom-rightStart-burst > .ui-border-element:before, .bottom-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-rightStart-burst:hover:after {
+  left: 0%;
+}
+
+.bottom-rightStart-burst:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst:before, .bottom-rightStart-burst:after, .bottom-rightStart-burst > .ui-border-element:before, .bottom-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-rightStart-burst:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.bottom-rightStart-burst:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst:before, .bottom-rightStart-burst:after, .bottom-rightStart-burst > .ui-border-element:before, .bottom-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-rightStart-burst:hover:before {
+  right: 0%;
+}
+
+.bottom-rightStart-burst:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst:before, .bottom-rightStart-burst:after, .bottom-rightStart-burst > .ui-border-element:before, .bottom-rightStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-rightStart-burst:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.bottom-rightStart-burst:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst:before, .bottom-leftStart-burst:after, .bottom-leftStart-burst > .ui-border-element:before, .bottom-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-leftStart-burst:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.bottom-leftStart-burst:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst:before, .bottom-leftStart-burst:after, .bottom-leftStart-burst > .ui-border-element:before, .bottom-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-leftStart-burst:hover:before {
+  right: 0%;
+}
+
+.bottom-leftStart-burst:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst:before, .bottom-leftStart-burst:after, .bottom-leftStart-burst > .ui-border-element:before, .bottom-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-leftStart-burst:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.bottom-leftStart-burst:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst:before, .bottom-leftStart-burst:after, .bottom-leftStart-burst > .ui-border-element:before, .bottom-leftStart-burst > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-leftStart-burst:hover:after {
+  left: 0%;
+}
+
+.bottom-leftStart-burst:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst-backward:before, .top-leftStart-burst-backward:after, .top-leftStart-burst-backward > .ui-border-element:before, .top-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-leftStart-burst-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.top-leftStart-burst-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst-backward:before, .top-leftStart-burst-backward:after, .top-leftStart-burst-backward > .ui-border-element:before, .top-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-leftStart-burst-backward:hover:after {
+  right: 0%;
+}
+
+.top-leftStart-burst-backward:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst-backward:before, .top-leftStart-burst-backward:after, .top-leftStart-burst-backward > .ui-border-element:before, .top-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-leftStart-burst-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.top-leftStart-burst-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-leftStart-burst-backward:before, .top-leftStart-burst-backward:after, .top-leftStart-burst-backward > .ui-border-element:before, .top-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-leftStart-burst-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-leftStart-burst-backward:hover:before {
+  left: 0%;
+}
+
+.top-leftStart-burst-backward:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst-backward:before, .top-rightStart-burst-backward:after, .top-rightStart-burst-backward > .ui-border-element:before, .top-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.top-rightStart-burst-backward:hover:before {
+  left: 0%;
+}
+
+.top-rightStart-burst-backward:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst-backward:before, .top-rightStart-burst-backward:after, .top-rightStart-burst-backward > .ui-border-element:before, .top-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.top-rightStart-burst-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.top-rightStart-burst-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst-backward:before, .top-rightStart-burst-backward:after, .top-rightStart-burst-backward > .ui-border-element:before, .top-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.top-rightStart-burst-backward:hover:after {
+  right: 0%;
+}
+
+.top-rightStart-burst-backward:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-rightStart-burst-backward:before, .top-rightStart-burst-backward:after, .top-rightStart-burst-backward > .ui-border-element:before, .top-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-rightStart-burst-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.top-rightStart-burst-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.top-rightStart-burst-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst-backward:before, .bottom-rightStart-burst-backward:after, .bottom-rightStart-burst-backward > .ui-border-element:before, .bottom-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-rightStart-burst-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.bottom-rightStart-burst-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst-backward:before, .bottom-rightStart-burst-backward:after, .bottom-rightStart-burst-backward > .ui-border-element:before, .bottom-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-rightStart-burst-backward:hover:before {
+  left: 0%;
+}
+
+.bottom-rightStart-burst-backward:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst-backward:before, .bottom-rightStart-burst-backward:after, .bottom-rightStart-burst-backward > .ui-border-element:before, .bottom-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-rightStart-burst-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.bottom-rightStart-burst-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-rightStart-burst-backward:before, .bottom-rightStart-burst-backward:after, .bottom-rightStart-burst-backward > .ui-border-element:before, .bottom-rightStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-rightStart-burst-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-rightStart-burst-backward:hover:after {
+  right: 0%;
+}
+
+.bottom-rightStart-burst-backward:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst-backward:before, .bottom-leftStart-burst-backward:after, .bottom-leftStart-burst-backward > .ui-border-element:before, .bottom-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst-backward:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.bottom-leftStart-burst-backward:hover:after {
+  right: 0%;
+}
+
+.bottom-leftStart-burst-backward:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst-backward:before, .bottom-leftStart-burst-backward:after, .bottom-leftStart-burst-backward > .ui-border-element:before, .bottom-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst-backward .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+.bottom-leftStart-burst-backward:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.bottom-leftStart-burst-backward:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst-backward:before, .bottom-leftStart-burst-backward:after, .bottom-leftStart-burst-backward > .ui-border-element:before, .bottom-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst-backward:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.bottom-leftStart-burst-backward:hover:before {
+  left: 0%;
+}
+
+.bottom-leftStart-burst-backward:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-leftStart-burst-backward:before, .bottom-leftStart-burst-backward:after, .bottom-leftStart-burst-backward > .ui-border-element:before, .bottom-leftStart-burst-backward > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-leftStart-burst-backward .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.bottom-leftStart-burst-backward:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.bottom-leftStart-burst-backward:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:before, .topBottom-leftRightCorner:after, .topBottom-leftRightCorner > .ui-border-element:before, .topBottom-leftRightCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-leftRightCorner:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:hover:before {
+  right: 0%;
+}
+
+.topBottom-leftRightCorner:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:before, .topBottom-leftRightCorner:after, .topBottom-leftRightCorner > .ui-border-element:before, .topBottom-leftRightCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-leftRightCorner .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.topBottom-leftRightCorner:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:before, .topBottom-leftRightCorner:after, .topBottom-leftRightCorner > .ui-border-element:before, .topBottom-leftRightCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-leftRightCorner:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:hover:after {
+  left: 0%;
+}
+
+.topBottom-leftRightCorner:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:before, .topBottom-leftRightCorner:after, .topBottom-leftRightCorner > .ui-border-element:before, .topBottom-leftRightCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-leftRightCorner .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-leftRightCorner:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.topBottom-leftRightCorner:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:before, .topBottom-rightLeftCorner:after, .topBottom-rightLeftCorner > .ui-border-element:before, .topBottom-rightLeftCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-rightLeftCorner:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:hover:before {
+  left: 0%;
+}
+
+.topBottom-rightLeftCorner:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:before, .topBottom-rightLeftCorner:after, .topBottom-rightLeftCorner > .ui-border-element:before, .topBottom-rightLeftCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-rightLeftCorner .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.topBottom-rightLeftCorner:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:before, .topBottom-rightLeftCorner:after, .topBottom-rightLeftCorner > .ui-border-element:before, .topBottom-rightLeftCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-rightLeftCorner:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:hover:after {
+  right: 0%;
+}
+
+.topBottom-rightLeftCorner:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:before, .topBottom-rightLeftCorner:after, .topBottom-rightLeftCorner > .ui-border-element:before, .topBottom-rightLeftCorner > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.topBottom-rightLeftCorner .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.topBottom-rightLeftCorner:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.topBottom-rightLeftCorner:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:before, .border-inOutSpread:after, .border-inOutSpread > .ui-border-element:before, .border-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.border-inOutSpread:before {
+  border-top: 2px solid #333;
+  left: 51%;
+  right: 51%;
+  top: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:hover:before {
+  left: 0%;
+  right: 0%;
+}
+
+.border-inOutSpread:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:before, .border-inOutSpread:after, .border-inOutSpread > .ui-border-element:before, .border-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.border-inOutSpread .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 50%;
+  bottom: 50%;
+  right: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:hover .ui-border-element:after {
+  top: 0%;
+  bottom: 0%;
+}
+
+.border-inOutSpread:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:before, .border-inOutSpread:after, .border-inOutSpread > .ui-border-element:before, .border-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.border-inOutSpread:after {
+  border-bottom: 2px solid #333;
+  left: 51%;
+  right: 51%;
+  bottom: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:hover:after {
+  left: 0%;
+  right: 0%;
+}
+
+.border-inOutSpread:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:before, .border-inOutSpread:after, .border-inOutSpread > .ui-border-element:before, .border-inOutSpread > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.border-inOutSpread .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 50%;
+  bottom: 50%;
+  left: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.border-inOutSpread:hover .ui-border-element:before {
+  top: 0%;
+  bottom: 0%;
+}
+
+.border-inOutSpread:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:before, .top-stay:after, .top-stay > .ui-border-element:before, .top-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-stay:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:before, .top-stay:after, .top-stay > .ui-border-element:before, .top-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-stay .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:hover .ui-border-element:after {
+  bottom: 0%;
+}
+
+.top-stay:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:before, .top-stay:after, .top-stay > .ui-border-element:before, .top-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-stay:after {
+  border-bottom: 2px solid #333;
+  left: 51%;
+  right: 51%;
+  bottom: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:hover:after {
+  left: 0%;
+  right: 0%;
+}
+
+.top-stay:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:before, .top-stay:after, .top-stay > .ui-border-element:before, .top-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.top-stay .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.top-stay:hover .ui-border-element:before {
+  bottom: 0%;
+}
+
+.top-stay:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:before, .bottom-stay:after, .bottom-stay > .ui-border-element:before, .bottom-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-stay:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:before, .bottom-stay:after, .bottom-stay > .ui-border-element:before, .bottom-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-stay .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:hover .ui-border-element:after {
+  top: 0%;
+}
+
+.bottom-stay:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:before, .bottom-stay:after, .bottom-stay > .ui-border-element:before, .bottom-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-stay:before {
+  border-top: 2px solid #333;
+  left: 51%;
+  right: 51%;
+  top: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:hover:before {
+  left: 0%;
+  right: 0%;
+}
+
+.bottom-stay:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:before, .bottom-stay:after, .bottom-stay > .ui-border-element:before, .bottom-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.bottom-stay .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bottom-stay:hover .ui-border-element:before {
+  top: 0%;
+}
+
+.bottom-stay:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:before, .left-stay:after, .left-stay > .ui-border-element:before, .left-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-stay .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:before, .left-stay:after, .left-stay > .ui-border-element:before, .left-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-stay .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 50%;
+  bottom: 50%;
+  right: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:hover .ui-border-element:after {
+  top: 0%;
+  bottom: 0%;
+}
+
+.left-stay:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:before, .left-stay:after, .left-stay > .ui-border-element:before, .left-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-stay:before {
+  border-top: 2px solid #333;
+  left: 0;
+  right: 100%;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:hover:before {
+  right: 0%;
+}
+
+.left-stay:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:before, .left-stay:after, .left-stay > .ui-border-element:before, .left-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.left-stay:after {
+  border-bottom: 2px solid #333;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.left-stay:hover:after {
+  right: 0%;
+}
+
+.left-stay:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:before, .right-stay:after, .right-stay > .ui-border-element:before, .right-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-stay .ui-border-element:after {
+  border-right: 2px solid #333;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:before, .right-stay:after, .right-stay > .ui-border-element:before, .right-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-stay .ui-border-element:before {
+  border-left: 2px solid #333;
+  top: 50%;
+  bottom: 50%;
+  left: 0px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:hover .ui-border-element:before {
+  top: 0%;
+  bottom: 0%;
+}
+
+.right-stay:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:before, .right-stay:after, .right-stay > .ui-border-element:before, .right-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-stay:before {
+  border-top: 2px solid #333;
+  left: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:hover:before {
+  left: 0%;
+}
+
+.right-stay:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:before, .right-stay:after, .right-stay > .ui-border-element:before, .right-stay > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.right-stay:after {
+  border-bottom: 2px solid #333;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.right-stay:hover:after {
+  left: 0%;
+}
+
+.right-stay:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:before, .slideOpposite:after, .slideOpposite > .ui-border-element:before, .slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.slideOpposite {
+  overflow: hidden;
+}
+
+.slideOpposite:before {
+  border-top: 5px solid #333;
+  left: 0;
+  right: 0;
+  top: -30%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:hover:before {
+  top: 0px;
+}
+
+.slideOpposite:not(:hover):before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:before, .slideOpposite:after, .slideOpposite > .ui-border-element:before, .slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.slideOpposite {
+  overflow: hidden;
+}
+
+.slideOpposite:after {
+  border-bottom: 5px solid #333;
+  left: 0;
+  right: 0;
+  bottom: -30%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:hover:after {
+  bottom: 0px;
+}
+
+.slideOpposite:not(:hover):after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:before, .slideOpposite:after, .slideOpposite > .ui-border-element:before, .slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.slideOpposite {
+  overflow: hidden;
+}
+
+.slideOpposite .ui-border-element:before {
+  border-left: 5px solid #333;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:hover .ui-border-element:before {
+  left: 0px;
+}
+
+.slideOpposite:not(:hover) .ui-border-element:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:before, .slideOpposite:after, .slideOpposite > .ui-border-element:before, .slideOpposite > .ui-border-element:after {
+  content: '';
+  position: absolute;
+}
+
+.slideOpposite {
+  overflow: hidden;
+}
+
+.slideOpposite .ui-border-element:after {
+  border-right: 5px solid #333;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slideOpposite:hover .ui-border-element:after {
+  right: 0px;
+}
+
+.slideOpposite:not(:hover) .ui-border-element:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}

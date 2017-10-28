@@ -1,0 +1,568 @@
+@import "../ui-button.scss";
+
+.ui-box{
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: relative;
+    vertical-align: baseline;
+    padding: 10px;
+}
+
+@mixin borderAnimation(
+  $selector,
+  $option: (
+  "position" : "top",
+  "animType" : "leftToRight",
+  "delay" : 0s,
+  "noHoverDelay" : 0s,
+  "easing" : ease-out,
+  "duration" : 200ms,
+  "color" : "#000",
+  "width" : "1px",
+  "style" : "solid",
+  "ui-border-element" : false
+  )
+)
+{
+    //wirte code here
+    $position          : map-get( $option, position );
+    $animType          : map-get( $option, animType );
+    $delay             : map-get( $option, delay );
+    $noHoverDelay      : map-get( $option, noHoverDelay );
+    $easing            : map-get( $option, easing );
+    $duration          : map-get( $option, duration );
+    $color             : map-get( $option, color );
+    $width             : map-get( $option, width );
+    $style             : map-get( $option, style );
+    $ui-border-element : map-get( $option, ui-border-element );
+
+    #{$selector}:before, #{$selector}:after, #{$selector} > .ui-border-element:before, #{$selector} > .ui-border-element:after{
+        content: '';
+        position: absolute;
+    }
+
+    @if $position == top or $position == bottom{
+        $pseudo: ":after";
+        $borderPos: "bottom";
+        @if $position == top{
+          $pseudo: ":before";
+          $borderPos: "top";
+        }
+
+        @if $animType == leftToRight{
+          #{$selector}#{$pseudo}{
+              border-#{$borderPos}: #{$width} #{$style} #{$color};
+              left: 0;
+              right: 100%;
+              #{$position}: 0;
+              @include browser-transition-property( all );
+              @include browser-transition-timing-function( $easing );
+              @include browser-transition-duration( $duration );
+              @include browser-transition-delay( $delay );
+          }
+          #{$selector}:hover#{$pseudo}{
+              right: 0%;
+          }
+          #{$selector}:not(:hover)#{$pseudo}{
+              @include browser-transition-delay( $noHoverDelay );
+          }
+        }
+
+        @if $animType == rightToLeft{
+          #{$selector}#{$pseudo}{
+              border-#{$borderPos}: #{$width} #{$style} #{$color};
+              left: 100%;
+              right: 0;
+              #{$position}: 0;
+              @include browser-transition-property( all );
+              @include browser-transition-timing-function( $easing );
+              @include browser-transition-duration( $duration );
+              @include browser-transition-delay( $delay );
+          }
+          #{$selector}:hover#{$pseudo}{
+              left: 0%;
+          }
+          #{$selector}:not(:hover)#{$pseudo}{
+              @include browser-transition-delay( $noHoverDelay );
+          }
+        }
+
+        @if $animType == slideOpposite{
+          #{$selector}{
+              overflow: hidden;
+          }
+          #{$selector}#{$pseudo}{
+              border-#{$borderPos}: #{$width} #{$style} #{$color};
+              left: 0;
+              right: 0;
+              #{$position}: -30%;
+              @include browser-transition-property( all );
+              @include browser-transition-timing-function( $easing );
+              @include browser-transition-duration( $duration );
+              @include browser-transition-delay( $delay );
+          }
+          #{$selector}:hover#{$pseudo}{
+              #{$position}: 0px;
+          }
+          #{$selector}:not(:hover)#{$pseudo}{
+              @include browser-transition-delay( $noHoverDelay );
+          }
+        }
+
+        @if $animType == inOutSpread{
+          #{$selector}#{$pseudo}{
+              border-#{$borderPos}: #{$width} #{$style} #{$color};
+              left: 51%;
+              right: 51%;
+              #{$position}: 0px;
+              @include browser-transition-property( all );
+              @include browser-transition-timing-function( $easing );
+              @include browser-transition-duration( $duration );
+              @include browser-transition-delay( $delay );
+          }
+          #{$selector}:hover#{$pseudo}{
+              left: 0%;
+              right: 0%;
+          }
+          #{$selector}:not(:hover)#{$pseudo}{
+              @include browser-transition-delay( $noHoverDelay );
+          }
+        }
+
+        @if $animType == stay {
+          #{$selector}#{$pseudo}{
+              border-#{$borderPos}: #{$width} #{$style} #{$color};
+              left: 0;
+              right: 0;
+              #{$position}: 0;
+              @include browser-transition-property( all );
+              @include browser-transition-timing-function( $easing );
+              @include browser-transition-duration( $duration );
+              @include browser-transition-delay( $delay );
+          }
+        }
+
+    } //top and bottom ends here
+
+    @if $position == left or $position == right{
+
+        $pseudo: ":after";
+        $borderPos: "right";
+        @if $position == left{
+          $pseudo: ":before";
+          $borderPos: "left";
+        }
+
+        @if $animType == "topToBottom" {
+          @if $ui-border-element{
+            #{$selector} .ui-border-element#{$pseudo}{
+                border-#{$borderPos}: #{$width} #{$style} #{$color};
+                top: 0;
+                bottom: 100%;
+                #{$position}: 0;
+                @include browser-transition-property( all );
+                @include browser-transition-timing-function( $easing );
+                @include browser-transition-duration( $duration );
+                @include browser-transition-delay( $delay );
+            }
+            #{$selector}:hover .ui-border-element#{$pseudo}{
+                bottom: 0%;
+            }
+            #{$selector}:not(:hover) .ui-border-element#{$pseudo}{
+                @include browser-transition-delay( $noHoverDelay );
+            }
+          } @else{
+              #{$selector}#{$pseudo}{
+                  border-#{$borderPos}: #{$width} #{$style} #{$color};
+                  top: 0;
+                  bottom: 100%;
+                  #{$position}: 0;
+                  @include browser-transition-property( all );
+                  @include browser-transition-timing-function( $easing );
+                  @include browser-transition-duration( $duration );
+                  @include browser-transition-delay( $delay );
+              }
+              #{$selector}:hover#{$pseudo}{
+                  bottom: 0%;
+              }
+              #{$selector}:not(:hover)#{$pseudo}{
+                  @include browser-transition-delay( $noHoverDelay );
+              }
+          }
+        }
+
+        @if $animType == "bottomToTop" {
+          @if $ui-border-element{
+            #{$selector} .ui-border-element#{$pseudo}{
+                border-#{$borderPos}: #{$width} #{$style} #{$color};
+                top: 100%;
+                bottom: 0;
+                #{$position}: 0;
+                @include browser-transition-property( all );
+                @include browser-transition-timing-function( $easing );
+                @include browser-transition-duration( $duration );
+                @include browser-transition-delay( $delay );
+            }
+            #{$selector}:hover .ui-border-element#{$pseudo}{
+                top: 0%;
+            }
+            #{$selector}:not(:hover) .ui-border-element#{$pseudo}{
+                @include browser-transition-delay( $noHoverDelay );
+            }
+          } @else{
+              #{$selector}#{$pseudo}{
+                  border-#{$borderPos}: #{$width} #{$style} #{$color};
+                  top: 100%;
+                  bottom: 0;
+                  #{$position}: 0;
+                  @include browser-transition-property( all );
+                  @include browser-transition-timing-function( $easing );
+                  @include browser-transition-duration( $duration );
+                  @include browser-transition-delay( $delay );
+              }
+              #{$selector}:hover#{$pseudo}{
+                  top: 0%;
+              }
+              #{$selector}:not(:hover)#{$pseudo}{
+                  @include browser-transition-delay( $noHoverDelay );
+              }
+          }
+        }
+
+        @if $animType == "slideOpposite" {
+          @if $ui-border-element{
+            #{$selector}{
+                overflow: hidden;
+            }
+            #{$selector} .ui-border-element#{$pseudo}{
+                border-#{$borderPos}: #{$width} #{$style} #{$color};
+                top: 0;
+                bottom: 0;
+                #{$position}: -20px;
+                @include browser-transition-property( all );
+                @include browser-transition-timing-function( $easing );
+                @include browser-transition-duration( $duration );
+                @include browser-transition-delay( $delay );
+            }
+            #{$selector}:hover .ui-border-element#{$pseudo}{
+                #{$position}: 0px;
+            }
+            #{$selector}:not(:hover) .ui-border-element#{$pseudo}{
+                @include browser-transition-delay( $noHoverDelay );
+            }
+          } @else{
+              #{$selector}{
+                  overflow: hidden;
+              }
+              #{$selector}#{$pseudo}{
+                  border-#{$borderPos}: #{$width} #{$style} #{$color};
+                  top: 0;
+                  bottom: 0;
+                  #{$position}: -20px;
+                  @include browser-transition-property( all );
+                  @include browser-transition-timing-function( $easing );
+                  @include browser-transition-duration( $duration );
+                  @include browser-transition-delay( $delay );
+              }
+              #{$selector}:hover#{$pseudo}{
+                  #{$position}: 0px;
+              }
+              #{$selector}:not(:hover)#{$pseudo}{
+                  @include browser-transition-delay( $noHoverDelay );
+              }
+          }
+        }
+
+        @if $animType == "inOutSpread" {
+          @if $ui-border-element{
+            #{$selector} .ui-border-element#{$pseudo}{
+                border-#{$borderPos}: #{$width} #{$style} #{$color};
+                top: 50%;
+                bottom: 50%;
+                #{$position}: 0px;
+                @include browser-transition-property( all );
+                @include browser-transition-timing-function( $easing );
+                @include browser-transition-duration( $duration );
+                @include browser-transition-delay( $delay );
+            }
+            #{$selector}:hover .ui-border-element#{$pseudo}{
+                top: 0%;
+                bottom: 0%;
+            }
+            #{$selector}:not(:hover) .ui-border-element#{$pseudo}{
+                @include browser-transition-delay( $noHoverDelay );
+            }
+          } @else{
+              #{$selector}#{$pseudo}{
+                  border-#{$borderPos}: #{$width} #{$style} #{$color};
+                  top: 50%;
+                  bottom: 50%;
+                  #{$position}: 0px;
+                  @include browser-transition-property( all );
+                  @include browser-transition-timing-function( $easing );
+                  @include browser-transition-duration( $duration );
+                  @include browser-transition-delay( $delay );
+              }
+              #{$selector}:hover#{$pseudo}{
+                  top: 0%;
+                  bottom: 0%;
+              }
+              #{$selector}:not(:hover)#{$pseudo}{
+                  @include browser-transition-delay( $noHoverDelay );
+              }
+          }
+        }
+
+        @if $animType == "stay" {
+          @if $ui-border-element{
+            #{$selector} .ui-border-element#{$pseudo}{
+                border-#{$borderPos}: #{$width} #{$style} #{$color};
+                top: 0;
+                bottom: 0;
+                #{$position}: 0;
+                @include browser-transition-property( all );
+                @include browser-transition-timing-function( $easing );
+                @include browser-transition-duration( $duration );
+                @include browser-transition-delay( $delay );
+            }
+          } @else{
+              #{$selector}#{$pseudo}{
+                  border-#{$borderPos}: #{$width} #{$style} #{$color};
+                  top: 0;
+                  bottom: 0;
+                  #{$position}: 0;
+                  @include browser-transition-property( all );
+                  @include browser-transition-timing-function( $easing );
+                  @include browser-transition-duration( $duration );
+                  @include browser-transition-delay( $delay );
+              }
+          }
+        }
+
+    } //left and right ends here
+
+}
+
+$option: (
+  "position" : "top",
+  "animType" : "leftToRight",
+  "delay" : 0s,
+  "noHoverDelay" : 0s,
+  "easing" : $borderEasing,
+  "duration" : $borderDuration,
+  "color" : $borderColor,
+  "width" : $borderWidth,
+  "style" : $borderStyle,
+  "ui-border-element" : false,
+);
+
+
+//@include borderAnimation( ".borderBox", $option );
+$top-leftToRight        : ( selector: ".top-leftToRight", option: ( position : "top", animType : "leftToRight" ) );
+$top-rightToLeft        : ( selector: ".top-rightToLeft", option: ( position : "top", animType : "rightToLeft" ) );
+$top-inOutSpread        : ( selector: ".top-inOutSpread", option: ( position : "top", animType : "inOutSpread" ) );
+$top-slideOpposite      : ( selector: ".top-slideOpposite", option: ( position : "top", animType : "slideOpposite", easing: linear, width: 5px ) );
+
+$bottom-leftToRight     : ( selector: ".bottom-leftToRight", option: ( position : "bottom", animType : "leftToRight" ) );
+$bottom-rightToLeft     : ( selector: ".bottom-rightToLeft", option: ( position : "bottom", animType : "rightToLeft" ) );
+$bottom-inOutSpread     : ( selector: ".bottom-inOutSpread", option: ( position : "bottom", animType : "inOutSpread" ) );
+$bottom-slideOpposite   : ( selector: ".bottom-slideOpposite", option: ( position : "bottom", animType : "slideOpposite", easing: linear, width: 5px ) );
+
+$left-topToBottom        : ( selector: ".left-topToBottom", option: ( position : "left", animType : "topToBottom" ) );
+$left-bottomToTop        : ( selector: ".left-bottomToTop", option: ( position : "left", animType : "bottomToTop" ) );
+$left-inOutSpread        : ( selector: ".left-inOutSpread", option: ( position : "left", animType : "inOutSpread" ) );
+$left-slideOpposite      : ( selector: ".left-slideOpposite", option: ( position : "left", animType : "slideOpposite", easing: linear, width: 5px ) );
+
+$right-topToBottom       : ( selector: ".right-topToBottom", option: ( position : "right", animType : "topToBottom" ) );
+$right-bottomToTop       : ( selector: ".right-bottomToTop", option: ( position : "right", animType : "bottomToTop" ) );
+$right-inOutSpread       : ( selector: ".right-inOutSpread", option: ( position : "right", animType : "inOutSpread" ) );
+$right-slideOpposite     : ( selector: ".right-slideOpposite", option: ( position : "right", animType : "slideOpposite", easing: linear, width: 5px ) );
+
+$forwardBorderTrain1       : ( selector: ".forwardBorderTrain", option: ( position : "top", animType : "leftToRight" ) );
+$forwardBorderTrain2       : ( selector: ".forwardBorderTrain", option: ( position : "right", animType : "topToBottom", "ui-border-element" : true ) );
+$forwardBorderTrain3       : ( selector: ".forwardBorderTrain", option: ( position : "bottom", animType : "rightToLeft" ) );
+$forwardBorderTrain4      : ( selector: ".forwardBorderTrain", option: ( position : "left", animType : "bottomToTop", "ui-border-element" : true ) );
+
+$backwardBorderTrain1       : ( selector: ".backwardBorderTrain", option: ( position : "top", animType : "rightToLeft" ) );
+$backwardBorderTrain2       : ( selector: ".backwardBorderTrain", option: ( position : "right", animType : "bottomToTop", "ui-border-element" : true ) );
+$backwardBorderTrain3       : ( selector: ".backwardBorderTrain", option: ( position : "bottom", animType : "leftToRight" ) );
+$backwardBorderTrain4      : ( selector: ".backwardBorderTrain", option: ( position : "left", animType : "topToBottom", "ui-border-element" : true ) );
+
+$top-leftStart1       : ( selector: ".top-leftStart", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$top-leftStart2       : ( selector: ".top-leftStart", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$top-leftStart3       : ( selector: ".top-leftStart", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$top-leftStart4       : ( selector: ".top-leftStart", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+$top-rightStart1       : ( selector: ".top-rightStart", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$top-rightStart2       : ( selector: ".top-rightStart", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$top-rightStart3       : ( selector: ".top-rightStart", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$top-rightStart4       : ( selector: ".top-rightStart", option: ( position : "top", animType : "leftToRight", ui-border-element : true, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+$bottom-rightStart1       : ( selector: ".bottom-rightStart", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$bottom-rightStart2       : ( selector: ".bottom-rightStart", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$bottom-rightStart3       : ( selector: ".bottom-rightStart", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$bottom-rightStart4       : ( selector: ".bottom-rightStart", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+$bottom-leftStart1       : ( selector: ".bottom-leftStart", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$bottom-leftStart2       : ( selector: ".bottom-leftStart", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$bottom-leftStart3       : ( selector: ".bottom-leftStart", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$bottom-leftStart4       : ( selector: ".bottom-leftStart", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+//reverse
+$top-leftStart1-backward       : ( selector: ".top-leftStart-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$top-leftStart2-backward        : ( selector: ".top-leftStart-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$top-leftStart3-backward        : ( selector: ".top-leftStart-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$top-leftStart4-backward        : ( selector: ".top-leftStart-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : true, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+$top-rightStart1-backward       : ( selector: ".top-rightStart-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$top-rightStart2-backward       : ( selector: ".top-rightStart-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$top-rightStart3-backward       : ( selector: ".top-rightStart-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$top-rightStart4-backward       : ( selector: ".top-rightStart-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+$bottom-rightStart1-backward        : ( selector: ".bottom-rightStart-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$bottom-rightStart2-backward        : ( selector: ".bottom-rightStart-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$bottom-rightStart3-backward        : ( selector: ".bottom-rightStart-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$bottom-rightStart4-backward        : ( selector: ".bottom-rightStart-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+$bottom-leftStart1-backward        : ( selector: ".bottom-leftStart-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 0, noHoverDelay : map-get( $option, duration ) * 3 ) );
+$bottom-leftStart2-backward        : ( selector: ".bottom-leftStart-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 1, noHoverDelay : map-get( $option, duration ) * 2 ) );
+$bottom-leftStart3-backward        : ( selector: ".bottom-leftStart-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 2, noHoverDelay : map-get( $option, duration ) * 1 ) );
+$bottom-leftStart4-backward        : ( selector: ".bottom-leftStart-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 3, noHoverDelay : map-get( $option, duration ) * 0 ) );
+
+//same but out with burst
+$top-leftStart1-burst       : ( selector: ".top-leftStart-burst", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 0 ) );
+$top-leftStart2-burst       : ( selector: ".top-leftStart-burst", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 1 ) );
+$top-leftStart3-burst       : ( selector: ".top-leftStart-burst", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 2 ) );
+$top-leftStart4-burst       : ( selector: ".top-leftStart-burst", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 3 ) );
+
+$top-rightStart1-burst       : ( selector: ".top-rightStart-burst", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 0 ) );
+$top-rightStart2-burst       : ( selector: ".top-rightStart-burst", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 1 ) );
+$top-rightStart3-burst       : ( selector: ".top-rightStart-burst", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 2 ) );
+$top-rightStart4-burst       : ( selector: ".top-rightStart-burst", option: ( position : "top", animType : "leftToRight", ui-border-element : true, delay : map-get( $option, duration ) * 3 ) );
+
+$bottom-rightStart1-burst       : ( selector: ".bottom-rightStart-burst", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 0 ) );
+$bottom-rightStart2-burst       : ( selector: ".bottom-rightStart-burst", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 1 ) );
+$bottom-rightStart3-burst       : ( selector: ".bottom-rightStart-burst", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 2 ) );
+$bottom-rightStart4-burst       : ( selector: ".bottom-rightStart-burst", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 3 ) );
+
+$bottom-leftStart1-burst       : ( selector: ".bottom-leftStart-burst", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 0 ) );
+$bottom-leftStart2-burst       : ( selector: ".bottom-leftStart-burst", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 1 ) );
+$bottom-leftStart3-burst       : ( selector: ".bottom-leftStart-burst", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 2 ) );
+$bottom-leftStart4-burst       : ( selector: ".bottom-leftStart-burst", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 3 ) );
+
+//reverse
+$top-leftStart1-burst-backward       : ( selector: ".top-leftStart-burst-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 0 ) );
+$top-leftStart2-burst-backward        : ( selector: ".top-leftStart-burst-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 1 ) );
+$top-leftStart3-burst-backward        : ( selector: ".top-leftStart-burst-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 2 ) );
+$top-leftStart4-burst-backward        : ( selector: ".top-leftStart-burst-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : true, delay : map-get( $option, duration ) * 3 ) );
+
+$top-rightStart1-burst-backward       : ( selector: ".top-rightStart-burst-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 0 ) );
+$top-rightStart2-burst-backward       : ( selector: ".top-rightStart-burst-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 1 ) );
+$top-rightStart3-burst-backward       : ( selector: ".top-rightStart-burst-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 2 ) );
+$top-rightStart4-burst-backward       : ( selector: ".top-rightStart-burst-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 3 ) );
+
+$bottom-rightStart1-burst-backward        : ( selector: ".bottom-rightStart-burst-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 0 ) );
+$bottom-rightStart2-burst-backward        : ( selector: ".bottom-rightStart-burst-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 1 ) );
+$bottom-rightStart3-burst-backward        : ( selector: ".bottom-rightStart-burst-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 2 ) );
+$bottom-rightStart4-burst-backward        : ( selector: ".bottom-rightStart-burst-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 3 ) );
+
+$bottom-leftStart1-burst-backward        : ( selector: ".bottom-leftStart-burst-backward", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : map-get( $option, duration ) * 0 ) );
+$bottom-leftStart2-burst-backward        : ( selector: ".bottom-leftStart-burst-backward", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : map-get( $option, duration ) * 1 ) );
+$bottom-leftStart3-burst-backward        : ( selector: ".bottom-leftStart-burst-backward", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : map-get( $option, duration ) * 2 ) );
+$bottom-leftStart4-burst-backward        : ( selector: ".bottom-leftStart-burst-backward", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : map-get( $option, duration ) * 3 ) );
+
+//corner expand
+$topBottom-leftRightCorner1       : ( selector: ".topBottom-leftRightCorner", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : 0s ) );
+$topBottom-leftRightCorner2       : ( selector: ".topBottom-leftRightCorner", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : 0s ) );
+$topBottom-leftRightCorner3       : ( selector: ".topBottom-leftRightCorner", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : 0s ) );
+$topBottom-leftRightCorner4       : ( selector: ".topBottom-leftRightCorner", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : 0s ) );
+
+$topBottom-rightLeftCorner1       : ( selector: ".topBottom-rightLeftCorner", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : 0s ) );
+$topBottom-rightLeftCorner2       : ( selector: ".topBottom-rightLeftCorner", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : 0s ) );
+$topBottom-rightLeftCorner3       : ( selector: ".topBottom-rightLeftCorner", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : 0s ) );
+$topBottom-rightLeftCorner4       : ( selector: ".topBottom-rightLeftCorner", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : 0s ) );
+
+//expand inOut
+$border-inOutSpread1       : ( selector: ".border-inOutSpread", option: ( position : "top", animType : "inOutSpread", ui-border-element : false, delay : 0s ) );
+$border-inOutSpread2      : ( selector: ".border-inOutSpread", option: ( position : "right", animType : "inOutSpread", ui-border-element : true, delay : 0s ) );
+$border-inOutSpread3       : ( selector: ".border-inOutSpread", option: ( position : "bottom", animType : "inOutSpread", ui-border-element : false, delay : 0s ) );
+$border-inOutSpread4       : ( selector: ".border-inOutSpread", option: ( position : "left", animType : "inOutSpread", ui-border-element : true, delay : 0s ) );
+
+$top-stay1                   : ( selector: ".top-stay", option: ( position : "top", animType : "stay", ui-border-element : false, delay : 0s, easing: linear ) );
+$top-stay2                   : ( selector: ".top-stay", option: ( position : "right", animType : "topToBottom", ui-border-element : true, delay : 0s, easing: linear ) );
+$top-stay3                   : ( selector: ".top-stay", option: ( position : "bottom", animType : "inOutSpread", ui-border-element : false, delay : 0s, easing: linear ) );
+$top-stay4                   : ( selector: ".top-stay", option: ( position : "left", animType : "topToBottom", ui-border-element : true, delay : 0s, easing: linear ) );
+
+$right-stay1                   : ( selector: ".right-stay", option: ( position : "right", animType : "stay", ui-border-element : true, delay : 0s, easing: linear ) );
+$right-stay2                   : ( selector: ".right-stay", option: ( position : "left", animType : "inOutSpread", ui-border-element : true, delay : 0s, easing: linear ) );
+$right-stay3                   : ( selector: ".right-stay", option: ( position : "top", animType : "rightToLeft", ui-border-element : false, delay : 0s, easing: linear ) );
+$right-stay4                   : ( selector: ".right-stay", option: ( position : "bottom", animType : "rightToLeft", ui-border-element : false, delay : 0s, easing: linear ) );
+
+$bottom-stay1                   : ( selector: ".bottom-stay", option: ( position : "bottom", animType : "stay", ui-border-element : false, delay : 0s, easing: linear ) );
+$bottom-stay2                   : ( selector: ".bottom-stay", option: ( position : "right", animType : "bottomToTop", ui-border-element : true, delay : 0s, easing: linear ) );
+$bottom-stay3                   : ( selector: ".bottom-stay", option: ( position : "top", animType : "inOutSpread", ui-border-element : false, delay : 0s, easing: linear ) );
+$bottom-stay4                   : ( selector: ".bottom-stay", option: ( position : "left", animType : "bottomToTop", ui-border-element : true, delay : 0s, easing: linear ) );
+
+$left-stay1                   : ( selector: ".left-stay", option: ( position : "left", animType : "stay", ui-border-element : true, delay : 0s, easing: linear ) );
+$left-stay2                   : ( selector: ".left-stay", option: ( position : "right", animType : "inOutSpread", ui-border-element : true, delay : 0s, easing: linear ) );
+$left-stay3                   : ( selector: ".left-stay", option: ( position : "top", animType : "leftToRight", ui-border-element : false, delay : 0s, easing: linear ) );
+$left-stay4                   : ( selector: ".left-stay", option: ( position : "bottom", animType : "leftToRight", ui-border-element : false, delay : 0s, easing: linear ) );
+
+$slideOpposite1      : ( selector: ".slideOpposite", option: ( position : "top", animType : "slideOpposite", ui-border-element : false, easing: linear, width: 5px ) );
+$slideOpposite2      : ( selector: ".slideOpposite", option: ( position : "bottom", animType : "slideOpposite", ui-border-element : false, easing: linear, width: 5px ) );
+$slideOpposite3      : ( selector: ".slideOpposite", option: ( position : "left", animType : "slideOpposite", ui-border-element : true, easing: linear, width: 5px ) );
+$slideOpposite4      : ( selector: ".slideOpposite", option: ( position : "right", animType : "slideOpposite", ui-border-element : true, easing: linear, width: 5px ) );
+
+$singleBorderAnimation  : (
+  $top-leftToRight, $top-rightToLeft, $top-inOutSpread, $top-slideOpposite,
+  $bottom-leftToRight, $bottom-rightToLeft, $bottom-inOutSpread, $bottom-slideOpposite,
+  $left-topToBottom, $left-bottomToTop, $left-inOutSpread, $left-slideOpposite,
+  $right-topToBottom, $right-bottomToTop, $right-inOutSpread, $right-slideOpposite,
+
+  $forwardBorderTrain1, $forwardBorderTrain2, $forwardBorderTrain3, $forwardBorderTrain4,
+  $backwardBorderTrain1, $backwardBorderTrain2, $backwardBorderTrain3, $backwardBorderTrain4,
+
+  $top-leftStart1, $top-leftStart2, $top-leftStart3, $top-leftStart4,
+  $top-rightStart1, $top-rightStart2, $top-rightStart3, $top-rightStart4,
+  $bottom-rightStart1, $bottom-rightStart2, $bottom-rightStart3, $bottom-rightStart4,
+  $bottom-leftStart1, $bottom-leftStart2, $bottom-leftStart3, $bottom-leftStart4,
+
+  $top-leftStart1-backward, $top-leftStart2-backward, $top-leftStart3-backward, $top-leftStart4-backward,
+  $top-rightStart1-backward, $top-rightStart2-backward, $top-rightStart3-backward, $top-rightStart4-backward,
+  $bottom-rightStart1-backward, $bottom-rightStart2-backward, $bottom-rightStart3-backward, $bottom-rightStart4-backward,
+  $bottom-leftStart1-backward, $bottom-leftStart2-backward, $bottom-leftStart3-backward, $bottom-leftStart4-backward,
+
+  $top-leftStart1-burst, $top-leftStart2-burst, $top-leftStart3-burst, $top-leftStart4-burst,
+  $top-rightStart1-burst, $top-rightStart2-burst, $top-rightStart3-burst, $top-rightStart4-burst,
+  $bottom-rightStart1-burst, $bottom-rightStart2-burst, $bottom-rightStart3-burst, $bottom-rightStart4-burst,
+  $bottom-leftStart1-burst, $bottom-leftStart2-burst, $bottom-leftStart3-burst, $bottom-leftStart4-burst,
+
+  $top-leftStart1-burst-backward, $top-leftStart2-burst-backward, $top-leftStart3-burst-backward, $top-leftStart4-burst-backward,
+  $top-rightStart1-burst-backward, $top-rightStart2-burst-backward, $top-rightStart3-burst-backward, $top-rightStart4-burst-backward,
+  $bottom-rightStart1-burst-backward, $bottom-rightStart2-burst-backward, $bottom-rightStart3-burst-backward, $bottom-rightStart4-burst-backward,
+  $bottom-leftStart1-burst-backward, $bottom-leftStart2-burst-backward, $bottom-leftStart3-burst-backward, $bottom-leftStart4-burst-backward,
+
+  $topBottom-leftRightCorner1, $topBottom-leftRightCorner2, $topBottom-leftRightCorner3, $topBottom-leftRightCorner4,
+  $topBottom-rightLeftCorner1, $topBottom-rightLeftCorner2, $topBottom-rightLeftCorner3, $topBottom-rightLeftCorner4,
+
+  $border-inOutSpread1, $border-inOutSpread2, $border-inOutSpread3, $border-inOutSpread4,
+
+  $top-stay1, $top-stay2, $top-stay3, $top-stay4,
+  $bottom-stay1, $bottom-stay2, $bottom-stay3, $bottom-stay4,
+  $left-stay1, $left-stay2, $left-stay3, $left-stay4,
+  $right-stay1, $right-stay2, $right-stay3, $right-stay4,
+
+  $slideOpposite1, $slideOpposite2, $slideOpposite3, $slideOpposite4
+);
+
+@each $obj in $singleBorderAnimation{
+    $defaultOption : $option;
+    $selector: #{map-get($obj, selector)};
+
+    $option : map-merge( $option, map-get($obj, option ) );
+    @include borderAnimation( $selector, $option );
+
+    $option : $defaultOption;
+}
