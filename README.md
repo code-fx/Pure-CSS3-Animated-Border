@@ -4,13 +4,13 @@ A pure css3 animated border which supports all moden browser.
 
 ## Demo Link
 
-See the [online demo](http://localhost/project/pure-css-animated-border/).
+See the [online demo](https://code-fx.github.io/Pure-CSS3-Animated-Border/).
 
 ## 1,2 Line Animated Boder Examples
 
 ```
 
-<a href="ui-box top-leftToRight"> 
+<a href="ui-box top-leftToRight">
   Animated Hyperlink Border
 </a>
 
@@ -36,19 +36,19 @@ Modify border style, color, width and easing
     border-top: 1px solid Tomato;
     transition-timing-function: linear;
   }
-  
+
   //bottom border
   .bottom-rightToLeft:after{
     border-bottom: 1px solid DodgerBlue;
     transition-timing-function: ease-in;
   }
-  
+
   //left border
   .left-bottomToTop:before{
     border-left: 1px solid smokeWhite;
     transition-timing-function: ease-out;
   }
-  
+
   //right border
   .right-topToBottom:after{
      border-right: 1px solid MediumSeaGreen;
@@ -75,19 +75,19 @@ Modify border style, color, width and easing
     border-top: 1px solid Tomato;
     transition-timing-function: linear;
   }
-  
+
   //bottom border
   .top-leftStart:after{
     border-bottom: 1px solid DodgerBlue;
     transition-timing-function: ease-in;
   }
-  
+
   //left border
   .top-leftStart .ui-border-element:before{
     border-left: 1px solid smokeWhite;
     transition-timing-function: ease-out;
   }
-  
+
   //right border
   .top-leftStart .ui-border-element:after{
      border-right: 1px solid MediumSeaGreen;
@@ -142,5 +142,3 @@ Modify border style, color, width and easing
 | .ui-box .right-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
 | .ui-box .bottom-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
 | .ui-box .left-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
-
-
