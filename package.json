@@ -1,5 +1,5 @@
 {
-  "name": "css3-animated-border",
+  "name": "pure-css3-animated-border",
   "version": "1.0.0",
   "description": "A pure css3 animated border which supports all moden browser.",
   "main": "index.js",

@@ -7,6 +7,11 @@ A pure css3 animated border which supports all moden browser.
 https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css
 ```
 
+## NPM
+```
+npm i pure-css3-animated-border
+```
+
 ## Demo Link
 
 See the [online demo](https://code-fx.github.io/Pure-CSS3-Animated-Border/).
