@@ -1,0 +1,25 @@
+{
+  "name": "css3-animated-border",
+  "version": "1.0.0",
+  "description": "A pure css3 animated border which supports all moden browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-fx/Pure-CSS3-Animated-Border.git"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "animation",
+    "border"
+  ],
+  "author": "Karim Khan <codefx@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code-fx/Pure-CSS3-Animated-Border/issues"
+  },
+  "homepage": "https://github.com/code-fx/Pure-CSS3-Animated-Border#readme"
+}
