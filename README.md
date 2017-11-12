@@ -17,7 +17,7 @@ npm i pure-css3-animated-border
 See the [online demo](https://code-fx.github.io/Pure-CSS3-Animated-Border/).
 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/LVbzkQ4E34baRc6UroXqDynU/code-fx/Pure-CSS3-Animated-Border'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/LVbzkQ4E34baRc6UroXqDynU/code-fx/Pure-CSS3-Animated-Border.svg' />
+Sponsered By Codesponsor
 </a>
 
 ## 1,2 Line Animated Boder Examples
