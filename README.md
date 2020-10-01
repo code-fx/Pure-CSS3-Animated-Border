@@ -2,7 +2,7 @@
 
 A pure css3 animated border which supports all moden browser.
 
-## CDN Link
+## CDN Link   :link:
 ```
 https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css
 ```
@@ -12,7 +12,7 @@ https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-
 npm i pure-css3-animated-border
 ```
 
-## Demo Link
+## Demo Link  :chains:
 
 See the [online demo](https://code-fx.github.io/Pure-CSS3-Animated-Border/).
 
@@ -157,6 +157,6 @@ Modify border style, color, width and easing
 | .ui-box .bottom-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
 | .ui-box .left-stay | ```<span class='ui-border-element'> Your Content... </span>``` |
 
-## Donate Link
+## Donate   :moneybag:
 
 [Donate Now](https://www.paypal.me/codefx).
